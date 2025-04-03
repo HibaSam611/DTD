@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: hiba Samraoui Samraoui 
+Curso: Dam1 
+Fecha: 28/03/2025
+Ejercicio: Ejercico 1 
+-->
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libro+)>
+    <!ELEMENT libro (titulo, editorial, autor, paginas)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT paginas (#PCDATA)>
+]>
+<biblioteca>
+    <libro>
+        <titulo>Castigo</titulo>
+        <editorial>Editorial Booket</editorial>
+        <autor>
+            <nombre>Carme</nombre>
+            <apellidos>Chaparro</apellidos>
+        </autor>
+        <paginas>1345</paginas>
+    </libro>
+    <libro>
+        <titulo>Bajo tierra seca</titulo>
+        <editorial>Editorial Destino</editorial>
+        <autor>
+            <nombre>Cesar</nombre>
+            <apellidos>Pérez Gellida</apellidos>
+        </autor>
+        <paginas>471</paginas>
+    </libro>
+    <libro>
+        <titulo>Alas de Onix</titulo>
+        <editorial>Planeta</editorial>
+        <autor>
+            <nombre>Rebecca</nombre>
+            <apellidos>Yarros</apellidos>
+        </autor>
+        <paginas>896</paginas>
+    </libro>
+</biblioteca>

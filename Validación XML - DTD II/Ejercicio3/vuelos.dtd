@@ -1,0 +1,19 @@
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: DAM1
+Fecha: 28/03/2025 
+Ejercicio: Ejercicio 2 
+-->
+<!ELEMENT panel (vuelo+)>
+<!ATTLIST panel aeropuerto CDATA #REQUIRED
+                 fecha CDATA #REQUIRED>
+
+<!ELEMENT vuelo (diario?, origen, destino, hora_salida, hora_llegada)>
+<!ATTLIST vuelo codigo CDATA #REQUIRED
+                 estado (C | E | R) #REQUIRED>
+
+<!ELEMENT diario EMPTY>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT hora_salida (#PCDATA)>
+<!ELEMENT hora_llegada (#PCDATA)>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui 
+Curso: DAM1
+Fecha: 02/04/2025
+Ejercicio: Ejercicio 1
+-->
+<!DOCTYPE factura [
+    <!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+    <!ATTLIST factura numero CDATA #REQUIRED>
+    <!ATTLIST factura fecha CDATA #REQUIRED>
+    
+    <!ELEMENT datos-emisor (nombre, cif, telefono)>
+    <!ELEMENT datos-cliente (nombre, cif, telefono)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    
+    <!ELEMENT detalle-factura (linea+)>
+    <!ATTLIST detalle-factura importe CDATA #REQUIRED>
+    
+    <!ELEMENT linea (descripcion, cantidad, pvp, oferta?)>
+    <!ATTLIST linea codigo-articulo ID #REQUIRED>
+    <!ATTLIST linea tipo (Libro | DVD | Varios) #REQUIRED>
+    
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT pvp (#PCDATA)>
+    <!ELEMENT oferta EMPTY>
+]>
+<factura numero="F12345" fecha="2023-10-01">
+    <datos-emisor>
+        <nombre>Librería la paz</nombre>
+        <cif>ES163495678A</cif>
+        <telefono>9123456221</telefono>
+    </datos-emisor>
+    <datos-cliente>
+        <nombre>Biblioteca Municipal</nombre>
+        <cif>ES87654321B</cif>
+        <telefono>987654321</telefono>
+    </datos-cliente>
+    <detalle-factura importe="100.00">
+        <linea codigo-articulo="A001" tipo="Libro">
+            <descripcion>Alas de sangre</descripcion>
+            <cantidad>2</cantidad>
+            <pvp>25.00</pvp>
+            <oferta/>
+        </linea>
+        <linea codigo-articulo="A002" tipo="DVD">
+            <descripcion>El monje que vendió su ferrari</descripcion>
+            <cantidad>1</cantidad>
+            <pvp>15.00</pvp>
+        </linea>
+        <linea codigo-articulo="A003" tipo="Varios">
+            <descripcion>Marcapáginas</descripcion>
+            <cantidad>5</cantidad>
+            <pvp>2.00</pvp>
+        </linea>
+    </detalle-factura>
+</factura>
+

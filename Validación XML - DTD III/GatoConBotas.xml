@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nombre: Hiba Samraoui Samraoui 
+Curso: DAM1 Fecha: 28/03/2025 
+Ejercicio: Ejercicio 1 --> 
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+<cuento cod="A01" titulo="El Gato con Botas" genero="fantasía">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Gato con Botas</nombre>
+            <genero>M</genero>
+            <descripcion_fisica>Un gato astuto y elegante que lleva botas y un sombrero.</descripcion_fisica>
+        </personaje>
+        <personaje id="p2" tipo="secundario">
+            <nombre>El Molinero</nombre>
+            <genero>M</genero>
+        </personaje>
+        <personaje id="p3" tipo="antagonista">
+            <nombre>El Ogro</nombre>
+            <genero>M</genero>
+            <descripcion_fisica>Un ogro grande y feroz que vive en un castillo.</descripcion_fisica>
+        </personaje>
+    </personajes>
+    <trama>Un gato astuto ayuda a su dueño a convertirse en un noble.</trama>
+    <etiqueta nombre="clásico"/>
+    <etiqueta nombre="animales"/>
+    <precio moneda="eur">12.99</precio>
+</cuento>

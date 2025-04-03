@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: DAM1
+Fecha: 28/03/2025 
+Ejercicio: Ejercicio 2 
+-->
+<!DOCTYPE panel SYSTEM "vuelos.dtd">
+<panel aeropuerto="JFK" fecha="20/12/2013">
+    <vuelo codigo="V22" estado="R">
+        <diario/>
+        <origen>New York</origen>
+        <destino>Chicago</destino>
+        <hora_salida>9:55</hora_salida>
+        <hora_llegada>12:30</hora_llegada>
+    </vuelo>
+    <vuelo codigo="V23" estado="C">
+        <origen>New York</origen>
+        <destino>Miami</destino>
+        <hora_salida>08:15</hora_salida>
+        <hora_llegada>10:15</hora_llegada>
+    </vuelo>
+</panel>

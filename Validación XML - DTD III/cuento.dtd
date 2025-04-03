@@ -1,0 +1,25 @@
+<!-- Nombre: Hiba Samraoui Samraoui 
+Curso: DAM1 Fecha: 28/03/2025 
+Ejercicio: Ejercicio 1 --> 
+<!ELEMENT cuento (personajes, trama, etiqueta*, precio?)>
+<!ATTLIST cuento
+    cod CDATA #REQUIRED
+    titulo CDATA #REQUIRED
+    genero (infantil | fantasia | terror) #IMPLIED>
+
+<!ELEMENT personajes (personaje+)>
+<!ELEMENT personaje (nombre, genero, descripcion_fisica?, imagen?, url?)>
+<!ATTLIST personaje
+    id ID #REQUIRED
+    tipo (principal | secundario | antagonista) "principal">
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT descripcion_fisica (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT trama (#PCDATA)>
+<!ELEMENT etiqueta EMPTY>
+<!ATTLIST etiqueta nombre CDATA #REQUIRED>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA "eur">

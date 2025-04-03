@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nombre: Hiba Samraoui Samraoui 
+Curso: DAM1 Fecha: 28/03/2025 
+Ejercicio: Ejercicio 1 --> 
+<!DOCTYPE cuento SYSTEM "cuento.dtd">
+<cuento cod="B02" titulo="La Casa de los Espíritus" genero="terror">
+    <personajes>
+        <personaje id="p1" tipo="principal">
+            <nombre>Clara</nombre>
+            <genero>F</genero>
+            <descripcion_fisica>Una mujer con habilidades psíquicas.</descripcion_fisica>
+        </personaje>
+        <personaje id="p2" tipo="secundario">
+            <nombre>Esteban Trueba</nombre>
+            <genero>M</genero>
+        </personaje>
+    </personajes>
+    <trama>La historia de una familia a lo largo de varias generaciones, marcada por el amor y la tragedia.</trama>
+    <etiqueta nombre="realismo mágico"/>
+    <precio>15.50</precio>
+</cuento>

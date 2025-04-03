@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: hiba Samraoui Samraoui 
+Curso: Dam1 
+Fecha: 28/03/2025
+Ejercicio: Ejercico 2 
+-->
+<!DOCTYPE jugadores SYSTEM "jugadores.dtd">
+<jugadores>
+    <jugador>
+        <nombre>kylian</nombre>
+        <apellidos>Mbappé</apellidos>
+        <equipo>
+            <ciudad>Madrid</ciudad>
+            <presidente>
+                <nombrePresidente>Florentino</nombrePresidente>
+                <apellidosPresidente>Pérez</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>24</edad>
+    </jugador>
+    <jugador>
+        <nombre>Lamine</nombre>
+        <apellidos>Yamal</apellidos>
+        <equipo>
+            <ciudad>Barcelona</ciudad>
+            <presidente>
+                <nombrePresidente>Joan</nombrePresidente>
+                <apellidosPresidente>Laporta</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>17</edad>
+    </jugador>
+    <jugador>
+        <nombre>Fermin</nombre>
+        <apellidos>Lopez</apellidos>
+        <equipo>
+            <ciudad>Barcelona</ciudad>
+            <presidente>
+                <nombrePresidente>Joan</nombrePresidente>
+                <apellidosPresidente>Laporta</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>21</edad>
+    </jugador>
+</jugadores>

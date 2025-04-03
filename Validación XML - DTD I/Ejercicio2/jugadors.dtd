@@ -1,0 +1,16 @@
+<!-- 
+Nombre: hiba Samraoui Samraoui 
+Curso: Dam1 
+Fecha: 28/03/2025
+Ejercicio: Ejercico 2 
+-->
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT jugador (nombre, apellidos, equipo, edad)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT equipo (ciudad, presidente)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT presidente (nombrePresidente, apellidosPresidente)>
+<!ELEMENT nombrePresidente (#PCDATA)>
+<!ELEMENT apellidosPresidente (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
