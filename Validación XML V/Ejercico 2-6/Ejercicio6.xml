@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025 
+Ejercicio : Ejercicio 6
+-->
+
+<!DOCTYPE paises [ 
+    <!ELEMENT paises (pais+)> <!-- El elemento paises debe contener uno o más elementos pais -->
+    <!ELEMENT pais (nombre, unionEuropea?, otan?)> <!-- El elemento pais debe tener nombre y union... opcionalmente -->
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT unionEuropea EMPTY> <!-- El elemento unionEuropea no debe tener contenido -->
+    <!ELEMENT otan EMPTY> 
+]>
+
+<paises>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea/>
+        <otan/>
+    </pais>
+    <pais>
+        <nombre>Noruega</nombre>
+        <otan/>
+    </pais>
+    <pais>
+        <nombre>Austria</nombre>
+        <unionEuropea/>
+    </pais>
+</paises>

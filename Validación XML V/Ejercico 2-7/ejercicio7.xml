@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025 
+Ejercicio: Ejercicio 7 
+-->
+
+<!DOCTYPE colores [ 
+    <!ELEMENT colores (color+)> <!-- El elemento colores debe contener uno o más elementos de tipo color -->
+    <!ELEMENT color (nombreSvg, codigo)> <!-- El elemento color debe contener los elementos nombreSvg y codigo -->
+    <!ELEMENT nombreSvg (#PCDATA)> <!-- El elemento nombreSvg debe contener texto -->
+    <!ELEMENT codigo (rgb | cmyk)> <!-- El elemento codigo debe contener un único elemento rgb o cmyk -->
+    <!ELEMENT rgb (#PCDATA)>
+    <!ELEMENT cmyk (#PCDATA)> 
+]>
+
+<colores>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <rgb>#800080</rgb>
+        </codigo>
+    </color>
+    <color>
+        <nombreSvg>Purple</nombreSvg>
+        <codigo>
+            <cmyk>#00FF007F</cmyk>
+        </codigo>
+    </color>
+</colores>

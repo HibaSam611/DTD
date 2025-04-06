@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025 
+Ejercicio : Ejercicio 3
+-->
+
+<!DOCTYPE aeropuertos [ 
+    <!ELEMENT aeropuertos (aeropuerto+)>
+    <!ELEMENT aeropuerto (nombre, cerrado?)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cerrado (#PCDATA)>
+]>
+
+<aeropuertos>
+    <aeropuerto>
+        <nombre>Berlin Schönefeld (SFX)</nombre>
+    </aeropuerto>
+    <aeropuerto>
+        <nombre>Berlin Tempelhof (THF)</nombre>
+        <cerrado>2008</cerrado>
+    </aeropuerto>
+</aeropuertos>

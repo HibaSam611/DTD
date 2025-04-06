@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025 
+Ejercicio : ejercicio 5
+-->
+
+<!DOCTYPE reyesEspanioles [ 
+    <!ELEMENT reyesEspanioles (rey*, reina+)> <!-- Elemento raíz 'reyesEspañoles' tiene 0 o más elementos 'rey' y elementos 'reina' -->
+    <!ELEMENT rey (nombre, padre, madre)> <!-- Elemento 'rey' tiene un elemento 'nombre', un elemento 'padre' y un elemento 'madre' -->
+    <!ELEMENT reina (nombre, padre, madre)> <!-- Elemento 'reina' tiene un elemento 'nombre', un elemento 'padre' y un elemento 'madre' -->
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT padre (#PCDATA)>
+    <!ELEMENT madre (#PCDATA)>
+]>
+
+<reyesEspanioles>
+    <rey>
+        <nombre>Felipe III</nombre>
+        <padre>Felipe II</padre>
+        <madre>Ana de Austria</madre>
+    </rey>
+    <reina>
+        <nombre>Juana la Loca</nombre>
+        <padre>Fernando el Católico</padre>
+        <madre>Isabel la Católica</madre>
+    </reina>
+    <rey>
+        <nombre>Carlos I</nombre>
+        <padre>Felipe el Hermoso</padre>
+        <madre>Juana la Loca</madre>
+    </rey>
+</reyesEspanioles>
