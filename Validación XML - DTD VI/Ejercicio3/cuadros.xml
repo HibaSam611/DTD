@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio: cuadros
+-->
+
+<!DOCTYPE cuadros [
+    <!ELEMENT cuadros (cuadro*)>
+    <!ELEMENT cuadro EMPTY>
+    <!ATTLIST cuadro titulo ID #REQUIRED>
+    <!ATTLIST cuadro autor CDATA #REQUIRED>
+]>
+<cuadros>
+    <cuadro titulo="AdanEva1" autor="Alberto Durero" /> 
+    <cuadro titulo="AdanEva2" autor="Lucas Cranach, el viejo" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio2: inventores
+-->
+
+<!DOCTYPE inventores [
+    <!ELEMENT inventores (inventor*)>
+    <!ELEMENT inventor EMPTY>
+    <!ATTLIST inventor invento CDATA #REQUIRED>
+    <!ATTLIST inventor nombre CDATA #REQUIRED> 
+]>
+<inventores>
+    <inventor nombre="Robert Adler" invento="Mando a distancia" />
+    <inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+    <inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+    <inventor invento="Fuego" />
+</inventores>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio: futbol
+-->
+
+<!DOCTYPE futbol [
+    <!ELEMENT futbol (jugador*)>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+]>
+<futbol>
+    <jugador nombre="Alfredo_Di_Stefano" codigo="1" /> 
+    <jugador nombre="Edson_Arantes_do_Nascimento_Pele" codigo="2" />
+    <jugador nombre="Diego_Armando_Maradona" codigo="3" />
+    <jugador nombre="Johan_Cruyff" codigo="4" />
+</futbol>

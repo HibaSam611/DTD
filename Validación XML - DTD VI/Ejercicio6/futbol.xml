@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio6: futbol
+-->
+
+<!DOCTYPE futbol [
+    <!ELEMENT futbol (jugador|equipo)*>
+    <!ELEMENT jugador EMPTY>
+    <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+    <!ATTLIST jugador codigo ID #REQUIRED>
+    <!ELEMENT equipo EMPTY>
+    <!ATTLIST equipo nombre CDATA #REQUIRED>
+    <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+<futbol>
+    <jugador nombre="Alfredo_Di_Stefano" codigo="ads" />
+    <jugador nombre="Edson_Arantes_do_Nascimento" codigo="ean" />
+    <jugador nombre="Diego_Armando_Maradona" codigo="dam" />
+    <jugador nombre="Johan_Cruyff" codigo="jc" />
+    <equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam" /> 
+    <equipo nombre="Futbol Club Barcelona" jugadores="jc dam" /> 
+</futbol>

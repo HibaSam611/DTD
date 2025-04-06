@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 06/04/2025
+Ejercicio1: libro
+-->
+
+<!DOCTYPE libro [
+    <!ELEMENT libro EMPTY>
+    <!ATTLIST libro autor CDATA #REQUIRED> 
+]>
+<libro autor="Mario Vargas Llosa" />
