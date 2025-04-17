@@ -1,0 +1,28 @@
+<!--
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 14/04/2025
+Ejercicio: Ejercicio1 
+-->
+
+<!-- Opción con pattern (como el ejemplo) -->
+<xs:element name="respuesta">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ABCDE]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- Opción alternativa con enumeraciones (sin usar pattern) -->
+<xs:element name="respuesta">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="A"/>
+      <xs:enumeration value="B"/>
+      <xs:enumeration value="C"/>
+      <xs:enumeration value="D"/>
+      <xs:enumeration value="E"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>

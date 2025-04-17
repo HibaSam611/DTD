@@ -1,0 +1,44 @@
+<!--
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 14/04/2025
+Ejercicio: Heladeria1
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:choice>
+              <xs:sequence>
+                <xs:element name="chocolate" type="cantidadGramos"/>
+                <xs:element name="vainilla" type="cantidadGramos"/>
+              </xs:sequence>
+              <xs:sequence>
+                <xs:element name="chocolate" type="cantidadGramos"/>
+                <xs:element name="turron" type="cantidadGramos"/>
+              </xs:sequence>
+              <xs:sequence>
+                <xs:element name="fresa" type="cantidadGramos"/>
+                <xs:element name="vainilla" type="cantidadGramos"/>
+              </xs:sequence>
+              <xs:sequence>
+                <xs:element name="fresa" type="cantidadGramos"/>
+                <xs:element name="turron" type="cantidadGramos"/>
+              </xs:sequence>
+            </xs:choice>
+            <xs:attribute name="fabricación" type="xs:date" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="cantidadGramos">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

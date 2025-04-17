@@ -1,0 +1,25 @@
+<!--
+Nombre: Hiba Samraoui Samraoui
+Curso: 1ºDAM
+Fecha: 14/04/2025
+Ejercicio: Ejercicio 1 
+-->
+
+<!-- Forma 1: Usando xs:pattern y xs:length -->
+<xs:element name="clave">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:length value="10"/>
+      <xs:pattern value="[a-zA-Z0-9]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- Forma 2: Solo xs:pattern -->
+<xs:element name="clave">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
